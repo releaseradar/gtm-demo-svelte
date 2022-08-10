@@ -14,6 +14,15 @@
 	export const prerender = true;
 </script>
 
+<script lang="ts">
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		// @ts-ignore
+		window.dataLayer.push({ event: 'pageview' });
+	});	
+</script>
+
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />

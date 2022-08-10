@@ -1,7 +1,13 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { enhance } from '$lib/form';
 	import { scale } from 'svelte/transition';
 	import { flip } from 'svelte/animate';
+
+	onMount(() => {
+		// @ts-ignore
+		window.dataLayer.push({ event: 'pageview' });
+	});	
 
 	type Todo = {
 		uid: string;

@@ -3,7 +3,13 @@
 </script>
 
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import Counter from '$lib/Counter.svelte';
+
+	onMount(() => {
+		// @ts-ignore
+		window.dataLayer.push({ event: 'pageview' });
+	});	
 </script>
 
 <svelte:head>
