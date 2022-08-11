@@ -21,7 +21,7 @@
 			<a
 				link-identifier="brandLink"
 				class="f6 mid-gray lh-title"
-				href="/c/brand/ldc-lux-decor-collection">LDC Lux Decor Collection</a
+				href="/">LDC Lux Decor Collection</a
 			>
 		</section>
 		<h1 class="f3 b lh-copy dark-gray mt1 mb2" itemprop="name">
