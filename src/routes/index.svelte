@@ -9,7 +9,7 @@
 	onMount(() => {
 		// @ts-ignore
 		window.dataLayer.push({ event: 'pageview' });
-	});	
+	});
 </script>
 
 <svelte:head>
