@@ -3,10 +3,7 @@ import Inspector from 'vite-plugin-svelte-inspector';
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [
-		sveltekit(),
-		Inspector({ enabled: true })
-	]
+	plugins: [sveltekit(), Inspector({ enabled: false })]
 };
 
 export default config;
