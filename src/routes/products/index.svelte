@@ -4,11 +4,14 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { items } from '$lib/stores/items';
 
 	onMount(() => {
 		// @ts-ignore
 		window.dataLayer.push({ event: 'pageview' });
 	});
+
+	$: itemList = Object.values($items);
 </script>
 
 <svelte:head>
@@ -16,6 +19,9 @@
 </svelte:head>
 
 <div class="container">
+	{#each itemList as { id, name }}
+		<a href="/products/{id}">{name}</a>
+	{/each}
 	<section class="ma3 flex flex-column">
 		<section>
 			<a link-identifier="brandLink" class="f6 mid-gray lh-title" href="/"
