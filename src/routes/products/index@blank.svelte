@@ -18,10 +18,8 @@
 <div class="container">
 	<section class="ma3 flex flex-column">
 		<section>
-			<a
-				link-identifier="brandLink"
-				class="f6 mid-gray lh-title"
-				href="/">LDC Lux Decor Collection</a
+			<a link-identifier="brandLink" class="f6 mid-gray lh-title" href="/"
+				>LDC Lux Decor Collection</a
 			>
 		</section>
 		<h1 class="f3 b lh-copy dark-gray mt1 mb2" itemprop="name">
@@ -122,55 +120,6 @@
 					>
 				</li>
 			</ul>
-			<div class="">
-				<div
-					role="navigation"
-					aria-hidden="false"
-					aria-label="carousel controls"
-					data-testid="carousel-controller"
-					class="flex items-center absolute bg-white-80 bottom-1 br-pill"
-					style="margin-left: 50%; transform: translateX(-50%); width: 184px;"
-				>
-					<div
-						class="flex-auto flex flex-column justify-center pr3 relative pa3 pl3"
-						data-testid="scrollbar-container"
-						style="height: 24px;"
-					>
-						<div class="flex flex-column justify-center w-100 relative">
-							<div class="absolute bg-near-white br-pill w-100" style="height: 2px;" />
-							<div
-								class="absolute b--none bg-transparent h-100 pa0 top-0 z-1"
-								data-testid="carousel-scrubber"
-								style="left: -2px; touch-action: none; width: 44px; top: -4px;"
-							>
-								<span
-									class="db b--solid bg-gray br-pill bw1 b--transparent"
-									style="background-clip: padding-box; height: 4px;"
-								/><span class="w_DM">Current carousel slide 1 of 5.</span>
-							</div>
-						</div>
-						<button
-							class="absolute b--none bg-transparent h-100 top-0 left-0"
-							data-testid="carousel-controller-next"
-							aria-label="Previous carousel slide"
-							style="width: 40px;"
-						/><button
-							class="absolute b--none bg-transparent h-100 top-0 right-0"
-							data-testid="carousel-controller-prev"
-							aria-label="Next carousel slide"
-							style="width: 126px;"
-						/>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="absolute right-1 flex flex-column items-center top-0">
-			<button
-				type="button"
-				class="h3 w3 ba bg-white b--black br4 ma1 pa0"
-				aria-label="Zoom image modal"
-				><i class="ld ld-ZoomIn" style="font-size:1rem;vertical-align:-0.175em" /></button
-			>
 		</div>
 	</div>
 
@@ -201,7 +150,7 @@
 	.container {
 		min-width: 360px;
 		max-width: 420px;
-		height: 100%;
+		height: 100vh;
 		margin: 0 auto;
 
 		background-color: white;
