@@ -1,7 +1,4 @@
-export type Item = {
-	id: string;
-	name: string;
-};
+import type { Item } from '$lib/models';
 
 const items: Item[] = [
 	{

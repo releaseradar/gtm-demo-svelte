@@ -4,8 +4,9 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import Cart, { addToCart } from '$lib/stores/Cart';
 
-	import type { Item } from '$lib/items';
+	import type { Item } from '$lib/models';
 
 	export let item: Item;
 
@@ -13,6 +14,8 @@
 		// @ts-ignore
 		window.dataLayer.push({ event: 'pageview' });
 	});
+
+	$: isItemInCart = $Cart.find((cartItem) => cartItem.id === item.id);
 </script>
 
 <svelte:head>
@@ -137,13 +140,25 @@
 				</div>
 				<div class="">
 					<div class="relative dib">
+						{#if isItemInCart}
+							<a
+								class="w_Bq w_Bs w_Bx"
+								href="/products/cart"
+								style="position:relative"
+								aria-label="View cart"
+							>
+								View cart
+							</a>
+						{/if}
 						<button
 							class="w_Bq w_Bs w_Bx"
 							type="button"
 							style="position:relative"
 							aria-label="Add to cart - Lux Decor Collection Gusseted Queen Pillows Set of 2 - Comfortable Breathable Bed Pillows for Sleeping (18x26)"
-							><span style="visibility:visible">Add to cart</span></button
+							on:click={() => addToCart(item)}
 						>
+							<span style="visibility:visible">{isItemInCart ? 'Added' : 'Add to cart'}</span>
+						</button>
 					</div>
 				</div>
 			</div>
