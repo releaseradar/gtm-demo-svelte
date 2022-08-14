@@ -4,14 +4,15 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { items } from '$lib/stores/items';
+
+	import type { Item } from '$lib/items';
+
+	export let items: Item[];
 
 	onMount(() => {
 		// @ts-ignore
 		window.dataLayer.push({ event: 'pageview' });
 	});
-
-	$: itemList = Object.values($items);
 </script>
 
 <svelte:head>
@@ -19,7 +20,7 @@
 </svelte:head>
 
 <div class="container">
-	{#each itemList as { id, name }}
+	{#each items as { id, name }}
 		<a href="/products/{id}">{name}</a>
 	{/each}
 	<section class="ma3 flex flex-column">

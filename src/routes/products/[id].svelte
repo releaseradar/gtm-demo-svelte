@@ -4,15 +4,15 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import { page } from '$app/stores';
-	import { items } from '$lib/stores/items';
+
+	import type { Item } from '$lib/items';
+
+	export let item: Item;
 
 	onMount(() => {
 		// @ts-ignore
 		window.dataLayer.push({ event: 'pageview' });
 	});
-
-	const item = $items[$page.params.id];
 </script>
 
 <svelte:head>
