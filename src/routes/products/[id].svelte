@@ -25,11 +25,7 @@
 <div class="container">
 	{#if item}
 		<section class="ma3 flex flex-column">
-			<section>
-				<a link-identifier="brandLink" class="f6 mid-gray lh-title" href="/"
-					>LDC Lux Decor Collection</a
-				>
-			</section>
+			<section class="f6 mid-gray lh-title">LDC Lux Decor Collection</section>
 			<h1 class="f3 b lh-copy dark-gray mt1 mb2" itemprop="name">
 				{item.name}
 			</h1>
