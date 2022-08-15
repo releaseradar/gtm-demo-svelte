@@ -1,7 +1,13 @@
 <script lang="ts">
 	import 'modern-normalize/modern-normalize.css';
-	import Header from '$lib/header/Header.svelte';
 	import '../app.css';
+	// import { afterNavigate } from '$app/navigation';
+	import Header from '$lib/header/Header.svelte';
+
+	// afterNavigate(({ from, to }) => {
+	// 	// @ts-ignore
+	// 	window.dataLayer.push({ event: 'pageview' });
+	// });
 </script>
 
 <div class="container">
