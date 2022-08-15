@@ -30,6 +30,11 @@
 	header {
 		display: flex;
 		justify-content: space-between;
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		background-color: white;
+		box-shadow: 0px 8px 6px -2px #eee;
 	}
 
 	.corner {

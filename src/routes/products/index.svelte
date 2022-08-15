@@ -18,11 +18,18 @@
 	<title>Products</title>
 </svelte:head>
 
-<div class="container">
-	<h1>Products</h1>
-	<ul>
-		{#each items as { id, name }}
-			<li><a href="/products/{id}">{name}</a></li>
-		{/each}
-	</ul>
-</div>
+<h1>Products</h1>
+<ul>
+	{#each items as { id, name }}
+		<li><a href="/products/{id}">{name}</a></li>
+	{/each}
+</ul>
+
+<style>
+	ul {
+		margin: -0.5rem 0;
+	}
+	li {
+		padding: 0.5rem;
+	}
+</style>
