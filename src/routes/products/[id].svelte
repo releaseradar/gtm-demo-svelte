@@ -143,7 +143,7 @@
 						{#if isItemInCart}
 							<a
 								class="w_Bq w_Bs w_Bx"
-								href="/products/cart"
+								href="/cart"
 								style="position:relative"
 								aria-label="View cart"
 							>

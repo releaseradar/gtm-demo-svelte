@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>Products</title>
+	<title>Cart</title>
 </svelte:head>
 
 <div class="container">
