@@ -4,6 +4,7 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 	import Cart, { addToCart } from '$lib/stores/Cart';
 
 	import type { Item } from 'src/lib/models';
@@ -14,6 +15,11 @@
 		// @ts-ignore
 		window.dataLayer.push({ event: 'pageview' });
 	});
+
+	function addAndGotoCart() {
+		addToCart(item);
+		goto('/cart');
+	}
 
 	$: isItemInCart = $Cart.find((cartItem) => cartItem.id === item.id);
 </script>
@@ -79,7 +85,7 @@
 						class="footer-button"
 						type="button"
 						aria-label="Add to cart - Lux Decor Collection Gusseted Queen Pillows Set of 2 - Comfortable Breathable Bed Pillows for Sleeping (18x26)"
-						on:click={() => addToCart(item)}
+						on:click={addAndGotoCart}
 					>
 						<span>{isItemInCart ? 'Added' : 'Add to cart'}</span>
 					</button>
@@ -231,10 +237,6 @@
 		font-weight: 400;
 		line-height: 1.5rem;
 		white-space: nowrap;
-	}
-
-	.relative {
-		position: relative;
 	}
 
 	.hero-image {
