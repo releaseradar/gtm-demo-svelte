@@ -13,25 +13,20 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="GTM Demo for Svelte" />
 </svelte:head>
 
-<section>
-	<h1>Store</h1>
-
-	<h2>Demo</h2>
-</section>
+<div class="container">
+	<h1>Welcome to our shop!</h1>
+	<a href="/products">Show products!</a>
+</div>
 
 <style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
+	.container {
+		min-width: 360px;
+		max-width: 420px;
+		height: 100vh;
+		margin: 0 auto;
+		background-color: white;
+		text-align: start;
 	}
 </style>
