@@ -21,14 +21,3 @@
 		{/each}
 	</ul>
 </div>
-
-<style>
-	.container {
-		min-width: 360px;
-		max-width: 420px;
-		height: 100vh;
-		margin: 0 auto;
-		background-color: white;
-		text-align: start;
-	}
-</style>
