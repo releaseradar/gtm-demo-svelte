@@ -6,7 +6,7 @@
 	import { onMount } from 'svelte';
 	import Cart, { addToCart } from '$lib/stores/Cart';
 
-	import type { Item } from '$lib/models';
+	import type { Item } from 'src/lib/models';
 
 	export let item: Item;
 

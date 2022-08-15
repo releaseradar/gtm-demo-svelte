@@ -4,7 +4,7 @@
 
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import type { Item } from '$lib/models';
+	import type { Item } from 'src/lib/models';
 
 	export let items: Item[];
 
