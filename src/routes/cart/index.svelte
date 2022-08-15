@@ -14,14 +14,17 @@
 </svelte:head>
 
 <div class="container">
-	<h1>Cart</h1>
+	<h1>Shopping Cart</h1>
 	<hr />
 	<h2>Products</h2>
-	<ul>
-		{#each $Cart as { name }}
-			<li>{name}</li>
+	<ol>
+		{#each $Cart as { name, price }}
+			<li>{name} - ${price}</li>
 		{/each}
-	</ul>
+	</ol>
 	<hr />
-	<h2>Subtotal(2 items): $201.95</h2>
+	<h2>
+		Subtotal({$Cart.length} items):
+		<b>${$Cart.map(({ price }) => price).reduce((a, b) => a + b, 0)}</b>
+	</h2>
 </div>
