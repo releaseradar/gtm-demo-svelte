@@ -13,11 +13,27 @@
 
 	onMount(() => {
 		// @ts-ignore
-		window.dataLayer.push({ event: 'pageview' });
+		window.dataLayer.push({ ecommerce: null }); // Clear the previous ecommerce object.
+		// @ts-ignore
+		window.dataLayer.push({
+			event: 'view_item',
+			ecommerce: {
+				items: [item]
+			}
+		});
 	});
 
 	function addAndGotoCart() {
 		addToCart(item);
+		// @ts-ignore
+		window.dataLayer.push({ ecommerce: null }); // Clear the previous ecommerce object.
+		// @ts-ignore
+		window.dataLayer.push({
+			event: 'add_to_cart',
+			ecommerce: {
+				items: [item]
+			}
+		});
 		goto('/cart');
 	}
 
@@ -34,7 +50,9 @@
 		<h1 class="item-name">{item.item_name}</h1>
 		<div class="meta">
 			<div class="price-container">
-				<span class="price-wrap"><span>{item.currency}</span><span>${item.price - item.discount}</span></span>
+				<span class="price-wrap"
+					><span>{item.currency}</span><span>${item.price - item.discount}</span></span
+				>
 				<div class="original-price-wrap">
 					<span class="original-price">${item.price}</span>
 				</div>

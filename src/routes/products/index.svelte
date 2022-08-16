@@ -10,7 +10,14 @@
 
 	onMount(() => {
 		// @ts-ignore
-		window.dataLayer.push({ event: 'pageview' });
+		window.dataLayer.push({ ecommerce: null }); // Clear the previous ecommerce object.
+		// @ts-ignore
+		window.dataLayer.push({
+			event: 'view_item_list',
+			ecommerce: {
+				items
+			}
+		});
 	});
 </script>
 
@@ -20,8 +27,23 @@
 
 <h1>Products</h1>
 <ul>
-	{#each items as { item_id, item_name }}
-		<li><a href="/products/{item_id}">{item_name}</a></li>
+	{#each items as item}
+		<li>
+			<a
+				href="/products/{item.item_id}"
+				on:click={() => {
+					// @ts-ignore
+					window.dataLayer.push({ ecommerce: null }); // Clear the previous ecommerce object.
+					// @ts-ignore
+					window.dataLayer.push({
+						event: 'select_item',
+						ecommerce: {
+							items: [item]
+						}
+					});
+				}}>{item.item_name}</a
+			>
+		</li>
 	{/each}
 </ul>
 
