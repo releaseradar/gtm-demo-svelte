@@ -3,7 +3,7 @@ import items from '$lib/items';
 import type { RequestHandler } from './__types/[id]';
 
 export const GET: RequestHandler = ({ params }) => {
-	const item = items.find((item) => item.id === params.id);
+	const item = items.find((item) => item.item_id === params.id);
 
 	if (item) {
 		return {

@@ -20,8 +20,8 @@
 
 <h1>Products</h1>
 <ul>
-	{#each items as { id, name }}
-		<li><a href="/products/{id}">{name}</a></li>
+	{#each items as { item_id, item_name }}
+		<li><a href="/products/{item_id}">{item_name}</a></li>
 	{/each}
 </ul>
 

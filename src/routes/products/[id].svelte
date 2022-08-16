@@ -21,7 +21,7 @@
 		goto('/cart');
 	}
 
-	$: isItemInCart = $Cart.find((cartItem) => cartItem.id === item.id);
+	$: isItemInCart = $Cart.find((cartItem) => cartItem.item_id === item.item_id);
 </script>
 
 <svelte:head>
@@ -30,13 +30,13 @@
 
 <div class="container">
 	<section class="item-info">
-		<section class="brand-name">LDC Lux Decor Collection</section>
-		<h1 class="item-name">{item.name}</h1>
+		<section class="brand-name">{item.item_brand}</section>
+		<h1 class="item-name">{item.item_name}</h1>
 		<div class="meta">
 			<div class="price-container">
-				<span class="price-wrap"><span>USD</span><span>$24.99</span></span>
+				<span class="price-wrap"><span>{item.currency}</span><span>${item.price - item.discount}</span></span>
 				<div class="original-price-wrap">
-					<span class="original-price">$44.99</span>
+					<span class="original-price">${item.price}</span>
 				</div>
 			</div>
 			<div class="review-container">
@@ -74,7 +74,7 @@
 	<div class="footer-wrap">
 		<div class="footer">
 			<div class="footer-price-wrap">
-				<span class="footer-price">$24.99</span>
+				<span class="footer-price">${item.price - item.discount}</span>
 			</div>
 			<div>
 				<div class="footer-button-container">
