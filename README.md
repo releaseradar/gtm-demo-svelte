@@ -17,4 +17,4 @@ yarn dev
 * [Link Google Optimize with Google Analytics 4 & How to See the Reports](https://youtu.be/ufczfAZGUjM)
 * [Google Tag Manager Tutorial for Beginners (2022)](https://youtu.be/u_x5lVJMKZ0)
 * [How to Install Google Optimize with Google Tag Manager](https://youtu.be/wip8T__eTBw)
-* [https://youtu.be/2mNZQV7wFFo](https://youtu.be/2mNZQV7wFFo)
+* [GA4 Ecommerce Tracking // How to implement ecommerce tracking with Google Tag Manager for GA4](https://youtu.be/2mNZQV7wFFo)
