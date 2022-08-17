@@ -20,3 +20,4 @@ yarn dev
 * [GA4 Ecommerce Tracking // How to implement ecommerce tracking with Google Tag Manager for GA4](https://youtu.be/2mNZQV7wFFo)
 * [GA4 > Measure ecommerce](https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtm)
 * [GA4: Recommended events](https://support.google.com/analytics/answer/9267735)
+* [GOOGLE ANALYTICS 4: ECOMMERCE GUIDE FOR GOOGLE TAG MANAGER](https://www.simoahava.com/analytics/google-analytics-4-ecommerce-guide-google-tag-manager/)
