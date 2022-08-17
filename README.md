@@ -9,7 +9,7 @@ yarn dev
 
 ## Deployment
 
-* Demo: https://gtm-demo-svelte.netlify.app/products
+* Demo: https://gtm-demo-svelte.netlify.app
 
 ## Reference
 
