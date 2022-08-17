@@ -19,3 +19,4 @@ yarn dev
 * [How to Install Google Optimize with Google Tag Manager](https://youtu.be/wip8T__eTBw)
 * [GA4 Ecommerce Tracking // How to implement ecommerce tracking with Google Tag Manager for GA4](https://youtu.be/2mNZQV7wFFo)
 * [GA4 > Measure ecommerce](https://developers.google.com/analytics/devguides/collection/ga4/ecommerce?client_type=gtm)
+* [GA4: Recommended events](https://support.google.com/analytics/answer/9267735)
