@@ -23,3 +23,4 @@ yarn dev
 * [GOOGLE ANALYTICS 4: ECOMMERCE GUIDE FOR GOOGLE TAG MANAGER](https://www.simoahava.com/analytics/google-analytics-4-ecommerce-guide-google-tag-manager/)
 * [Install the anti-flicker snippet](https://support.google.com/optimize/answer/7100284?hl=en)
 * [Google Optimize: Reporting overview](https://support.google.com/optimize/answer/6218117?hl=en)
+* [Complete Google Tag Manager Data Layer Tutorial](https://www.analyticsmania.com/post/ultimate-google-tag-manager-data-layer-tutorial/)
