@@ -67,13 +67,6 @@
 				<a class="review-link">78 reviews</a>
 			</div>
 		</div>
-		<!-- <div class="f7 flex self-baseline mt2">
-			<span>Prices may vary online, in stores, and in-app</span><span class="pl2"
-				><button class="bg-white b--none pointer pa0" aria-label="legal information"
-					><i class="ld ld-InfoCircle" style="font-size:1rem;vertical-align:-0.175em" /></button
-				></span
-			>
-		</div> -->
 	</section>
 	<p class="tag-line">
 		<span><span class="tag">Reduced price</span></span>
